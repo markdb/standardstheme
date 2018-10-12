@@ -1,0 +1,482 @@
+/*
+Theme Name: The Standards Child
+Theme URI: https://lavertycreative.com
+Template: The-Standards
+Author: Kyle Laverty
+Author URI: https://lavertycreative.com
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: the_standards
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+The Standards is based on the U.S. Web Design Standards https://standards.usa.gov/
+
+*/
+@import url("../The-Standards/style.css");
+
+
+/* STYLESHEET TABLE OF CONTENTS:
+  1. Global Styles
+  2. Header Styles
+  3. Footer Styles
+  4. Homepage Styles
+  5. SEARCH RESULTS
+  6. Training Page Option 2
+  7. Sidebar Styles
+*/
+
+
+/***********************************
+1. GLOBAL STYLES
+************************************/
+
+/*space for global site changes*/
+
+p{
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+/*Hide page titles*/
+h1.entry-title {
+    display: none;
+}
+
+/*Custom page title*/
+.page-title{
+  text-align: center;
+  font-weight: 800;
+  font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  font-size: 56px;
+  margin: 45px auto -27px;
+}
+
+.hero-btcallout{
+    color:#fff;
+    text-align: center;
+}
+
+.hero-btcol {
+    padding-top: 50px;
+    border-right: 2px solid #eee;
+    padding-bottom: 50px;
+    padding-right: 40px!important;
+    padding-left: 40px!important;
+    background-color:#333;
+   font-size: 16px;
+    font-weight: 600;
+}
+
+.hero-btcol a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.hero-btcol:hover{
+  background:#205493;
+  cursor: pointer;
+}
+
+.usa-logo-subtext {
+    color: #fff;
+    margin-top: -10px;
+    font-family: merriweather;
+    font-weight: 300;
+    font-size: 24px;
+    margin-bottom: -16px;
+}
+
+.card{
+  background-color: #eaeaea;
+  border: 2px solid #eaeaea;
+}
+
+.card-title{
+  font-size: 40px;
+  color: #333;
+  font-weight: 800;
+  font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  margin-top: 5px;
+}
+
+.card-text{
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+
+}
+
+
+
+/***********************************
+2. HEADER STYLES
+************************************/
+.usa-banner-header {
+    /*padding-top: .55rem;
+    padding-bottom: .55rem;*/
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+/*Nav*/
+.usa-header-extended .usa-nav {
+    border-top: 1px solid rgba(241,241,241,.7);
+    background-color: #205493;
+    color: #fff;
+    padding: 0;
+}
+
+.usa-nav-inner {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 3rem;
+    padding-left: 1.5rem;
+    margin-top: -1px;
+    max-width: 1200px;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*Nav links*/
+.usa-header-extended .usa-nav-link {
+    padding-top: 0em;
+    color: #fff;
+}
+
+.wp-megamenu li a {
+    text-decoration: none;
+}
+
+.wp-megamenu li:hover {
+    text-decoration: underline;
+    background-color: #ee
+}
+
+/*Header logo*/
+@media screen and (min-width: 1200px){
+.usa-logo a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: ‘Merriweather’;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 68px;
+  }
+}
+
+@media screen and (min-width: 1200px){
+.usa-header {
+    border-bottom: 1px solid #205493;
+    background-color: #112e51;
+  }
+}
+
+@media screen and (min-width: 1200px){
+.usa-header-extended .usa-nav-inner, .usa-header-extended .usa-navbar {
+    max-width: 1200px;
+  }
+}
+
+@media screen and (min-width: 1200px){
+.usa-header-extended .usa-navbar {
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    display: block;
+    height: auto;
+    max-width: 1200px;
+  }
+}
+
+@media screen and (min-width: 481px){
+.usa-banner {
+    font-size: 1.3rem;
+    padding-bottom: 0;
+  }
+}
+
+
+.usa-banner p{
+  font-size: 12px!important;
+}
+
+.usa-nav-inner {
+    height: 50px!important;
+}
+
+#wp-megamenu-Primary {
+    height: 0px;
+    top: -9px;
+}
+
+/***********************************
+3. FOOTER STYLES
+************************************/
+
+/*Footer Links*/
+.usa-unstyled-list>li {
+display: inline;
+float: left;
+/*margin-right: 5rem;*/
+}
+.usa-unstyled-list>li a{
+  text-decoration: none;
+}
+
+div.usa-grid-full .usa-footer-nav .usa-unstyled-list>li {
+display: inline;
+float: left;
+margin-right: 5rem;
+}
+
+/*Footer Logo*/
+.usa-footer-logo-img {
+float: left;
+}
+.usa-footer-logo-img {
+  max-width: 35rem!important;
+}
+.usa-footer-logo-heading{
+display: inline-block;
+margin-top: 5rem;
+padding-left: 1.5rem;
+}
+.padding-2rem{
+  padding-right: 2rem;
+}
+
+/*Bottom Footer*/
+.usa-fill-black-light{
+    background-color:#333;
+    color:#fff;
+    text-align: center;
+}
+
+/*Media Query for Footer*/
+@media only screen and (min-width: 320px) {
+.usa-footer-medium .usa-footer-primary-section {
+      padding:0 10px 0 10px;
+    }
+    .usa-footer-contact-links.usa-width-one-half{
+      float: left;
+    }
+}
+
+/***********************************
+4. HOMEPAGE STYLES
+************************************/
+
+/*CALLOUT BOX BUTTONS*/
+.usa-header-extended .usa-nav-link {
+    padding-top: 0em;
+}
+
+.usa-hero-callout{
+  color: #FFF;
+}
+
+.usa-hero-callout .usa-button {
+    font-size: 1.4rem;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+/*HERO SECTION*/
+.usa-section-home{
+    background-color:#333;
+    color:#fff;
+}
+
+.usa-hero {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-image: url("https://www.oit.va.gov/_media/img/hero/bg3.jpg"),linear-gradient(to right, rgba(17,46,81,1) 0%, rgba(0,113,188,1) 100%);
+    background-position: center;
+    background-size: cover;
+    min-height: 300px;
+  color: rgba(0,0,0,0.70)
+}
+
+.usa-front {
+    padding-top: 0rem!important;
+    padding-bottom: 0rem!important;
+}
+
+
+/***********************************
+5. SEARCH RESULTS
+************************************/
+
+/*form*/
+#searchform input#searchsubmit{display: none !important;}
+.search-result-list{
+  background:#ECEFF1;
+  border: 1px solid #cdcdcd;
+  margin-bottom: 15px;
+  padding:0px 10px;
+}
+
+/*Results*/
+.search-result-list h2{
+  margin-top: 15px;
+}
+.search-result-list a{
+  color:#0d47a1;
+}
+.search-text{
+  max-width: inherit;
+  border-color: #ccc;
+}
+.search-items{
+  padding: 0;
+}
+
+/***********************************
+6. Training Page Option 2
+************************************/
+
+/*Training Search*/
+.trainsearch {
+    display: table;
+    padding-bottom: 20px;
+    width: 100%;
+}
+.trainsearch .usa-grid-full input {
+    float: left;
+    width: 80%;
+}
+.trainsearch .usa-grid-full input[type="submit"] {
+    float: left;
+    margin: 0 0 0 5px;
+    width: 20%;
+}
+
+/*Training layout*/
+.usa-width-one-half.trainblock1 {
+    background: #ccc none repeat scroll 0 0;
+    box-shadow: 0 1px 3px 0 #000;
+    margin-bottom: 25px;
+}
+.usa-width-one-half.trainblock2 {
+    padding: 10px;
+}
+
+.training-filter-section .input-filter {
+    border: 0.1rem solid #eee !important;
+    box-shadow: 0 2px 3px -3px #000;
+}
+.block-title a{
+ margin-top: 0;
+    font-size: 2rem;
+    color: #455962;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 1.2;
+    outline: 0;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+}
+.block-content{
+    font-weight: normal;
+    font-size: 1.500rem;
+    color: #617d8b;
+}
+.training-box-section{
+  background:#ECEFF1; 
+  margin-bottom:20px;     
+  box-shadow: 0 2px 3px -3px #000;
+}
+.training-box{
+  padding:10px 0 0 10px;
+}
+.training-filter-section{
+  border: 1px solid #ddd;
+    padding: 20px;
+    margin: 30px auto auto auto;
+    background: #e1e1e1;
+}
+.training-filter-section .input-filter{     
+    border: 0.1rem solid #eee !important;
+    box-shadow: 0 2px 3px -3px #000;
+}
+
+#relatedposts h3 { font-size: 24px; margin: 10px 0px 20px 0px; font-weight: normal; }
+#relatedposts ul {float: left; display: inline-block;padding: 0;list-style: outside none;}
+#relatedposts ul li { display: inline-block; margin-right: 15px;}
+#relatedposts img { border: 1px solid #DDD; background: #F8F8F8; padding: 5px; margin-bottom: 5px; }    
+#relatedposts a:hover { color: #51B1D3; }
+#box h3 {
+  color:#000000;
+  background:#F8F8F8;
+  padding:4px 0 3px 4px;
+}
+ 
+#box li  {
+  padding:3px 1px;
+  border-bottom: 1px;
+  list-style:none;
+  margin: 1px 5px;
+}
+#box li:last-child{
+  border:none;
+}
+
+/***********************************
+7. Sidebar Styles
+************************************/
+
+.vaea-title-bar {
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 26px;
+    border-bottom: 2px solid #205493;
+    font-weight: 600;
+}
+
+.vaea-title-bar {
+    padding: 20px;
+}
+
+.vaea-title-bar{
+  font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+}
+
+.va-clear5-with-divider {
+    height: 5px;
+}
+
+.va-clear15-with-divider {
+    height: 15px;
+}
+
+.va-clear50-with-divider {
+    height: 50px;
+}
+.va-clear15-with-divider, .va-clear5-with-divider, .va-clear50-with-divider {
+    border-bottom: 1px solid #f1f1f1;
+    margin-bottom: 20px;
+    clear: both;
+}
+
+.vaea-icon{
+    float: left;
+    margin-bottom: 10rem;
+    margin-right: 3rem;
+}
+
+
+
+
+
+
+
+
+
